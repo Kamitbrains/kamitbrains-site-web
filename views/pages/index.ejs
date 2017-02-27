@@ -1,66 +1,1202 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <% include ../partials/header.ejs %>
+<!doctype html>
+<html lang="fr">
+
+<meta charset="UTF-8">
+<meta name="description" content="Site de téléchargement de templates pour Bootstrap."/>
+<meta name="keywords" content="M-Host, achat"/>
+<meta name="author" content="Mister"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mister Host</title>
+
+<!-- =========================
+ FAVICON ET ICONE DU SITE 
+============================== -->
+<link rel="shortcut icon" href="images/icons/favicon.ico">
+<link rel="apple-touch-icon" href="images/icons/petite-icone.png">
+<link rel="apple-touch-icon" sizes="72x72" href="images/icons/icone-72x72.html">
+<link rel="apple-touch-icon" sizes="114x114" href="images/icons/icone-114x114.png">
+
+<!-- =========================
+     STYLESHEETS      
+============================== -->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/owl.theme.css">
+<link rel="stylesheet" href="css/owl.carousel.css">
+<link rel="stylesheet" href="css/jquery.vegas.min.css">
+
+<link rel="stylesheet" href="assets/icon-fonts/styles.css"> 
+<link rel="stylesheet" href="css/pixeden-icons.css"> 
+
+<!-- CSS CUSTOMISE -->
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/responsive.css">
+
+<!-- WEBFONT -->
+<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,400italic|Montserrat:700|Homemade+Apple' rel='stylesheet' type='text/css'>
+
+<!--[if lt IE 9]>
+			<script src="js/html5shiv.js"></script>
+			<script src="js/respond.min.js"></script>
+		<![endif]-->
+
+<!-- JQUERY -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 </head>
 
+
 <body>
-
-  <% include ../partials/nav.ejs %>
-
-<div class="jumbotron text-center">
-  <div class="container">
-    <a href="/" class="lang-logo">
-      <img src="/lang-logo.png">
-    </a>
-    <h1>Getting Started with Node on Heroku</h1>
-    <p>This is a sample Node application deployed to Heroku. It's a reasonably simple app - but a good foundation for understanding how to get the most out of the Heroku platform.</p>
-    <a type="button" class="btn btn-lg btn-default" href="https://devcenter.heroku.com/articles/getting-started-with-nodejs"><span class="glyphicon glyphicon-flash"></span> Getting Started with Node</a>
-    <a type="button" class="btn btn-lg btn-primary" href="https://github.com/heroku/node-js-getting-started"><span class="glyphicon glyphicon-download"></span> Source on GitHub</a>
-  </div>
+<!-- =========
+   CHARGEMENT     
+============== -->
+<div class="preloader">
+  <div class="status">Chargement du site, veuillez patienter...</div>
 </div>
+<!-- =========================
+   SECTION DE L'ACCEUIL      
+============================== -->
+<header id="home" class="header">
+	
+	<!-- MENU -->
+	<div id="main-nav" class="navbar navbar-inverse bs-docs-nav" role="banner">
+		<div class="container">
+			<div class="navbar-header responsive-logo">
+				<button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+				<span class="sr-only">M-Host</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				</button>
+				<a href="index.html" class="navbar-brand">
+				<img src="images/logo.png" alt="Mister Host">
+				</a>
+			</div>
+			<nav class="navbar-collapse bs-navbar-collapse collapse" role="navigation" style="height: 1px;">
+			<ul class="nav navbar-nav navbar-right responsive-nav main-nav-list">
+				<li><a href="#home">Accueil</a></li>
+				<li><a href="#focus">Plan du site</a></li>
+				<li><a href="#works">Galerie</a></li>
+				<li><a href="#aboutus">Nos compétences</a></li>
+				<li><a href="#team">L'équipe</a></li>
+				<li><a href="#pricingtable">Hébergements</a></li>
+				<li><a href="#features">À propos du site</a></li>
+				<li><a href="#products">Nos produits</a></li>
+				<li><a href="#testimonials">Témoignage</a></li>
+				<li><a href="#contact">Nous contacter</a></li>
+			</ul>
+			</nav>
+		</div>
+	</div>
+	<!-- / FIN DU MENU -->
+	
+	<!-- GRAND HAUT -->
+	<div class="container">
+		
+		<!-- TEXTE DU HAUT -->
+		<h1 class="intro">Meilleur qualité au meilleur prix</h1>
+		
+		<!-- BOUTONS AVEC LEURS ACTIONS -->
+		<div class="buttons">
+			<a href="#pricingtable" class="btn btn-primary custom-button blue-btn">Nos hébergements</a>
+			<a href="#" class="btn btn-primary custom-button purple-btn">Le staff</a>
+		</div>
+		
+		<!-- 3 PETITS MESSAGES A PROPOS DU SITE -->
+        <div class="row bottom-message-section">
+			<div class="col-lg-4 col-sm-4">
+				<div class="short-text">
+					<i class="icon icon-fontawesome-webfont-358"></i> Des prix fixe pour les hébergements
+				</div>
+			</div>
+			<div class="col-lg-4 col-sm-4">
+				<div class="short-text">
+					<i class="icon-fontawesome-webfont-286"></i> Produits de qualités instantané
+				</div>
+			</div>
+			<div class="col-lg-4 col-sm-4">
+				<div class="short-text">
+					<i class="icon-fontawesome-webfont-347"></i> Satisfaction garantie
+				</div>
+			</div>
+		</div>
+	</div> <!-- / FIN DU GRAND HAUT, DES PETITS MESSAGES ET DES BOUTONS AINSI QUE LEURS ACTIONS  -->
+	
+</header> <!-- / END HOME SECTION  -->
+
+<!-- =========================
+   SECTION PLAN DU SITE      
+============================== -->
+
+<section class="focus" id="focus">
 <div class="container">
-  <div class="alert alert-info text-center" role="alert">
-    To deploy your own copy, and learn the fundamentals of the Heroku platform, head over to the <a href="https://devcenter.heroku.com/articles/getting-started-with-nodejs" class="alert-link">Getting Started with Node on Heroku</a> tutorial.
-  </div>
-  <hr>
-  <div class="row">
-    <div class="col-md-6">
-      <h3><span class="glyphicon glyphicon-info-sign"></span> How this sample app works</h3>
-      <ul>
-        <li>This app was deployed to Heroku, either using Git or by using <a href="https://github.com/heroku/node-js-getting-started">Heroku Button</a> on the repository.</li>
+	
+	<!-- SECTION DU HAUT -->
+	<div class="section-header">
+		
+		<!-- TITRE -->
+		<h2 class="dark-text">Notre plan de site</h2>
+		
+		<!-- PETITE DESCRPTION -->
+		<h6>
+			Notre design est basé sur une seule page, fluide, claire et nette.
+		</h6>
+	</div>
+	<!-- / FIN SECTION DU HAUT -->
+	
+	<!-- DEBUT DES 4 BOITES -->
+	<div class="row">
+		
+		<!-- DEBUT PREMIERE BOITE -->
+		<div class="col-lg-3 col-sm-3 focus-box red" data-scrollreveal="enter left after 0.15s over 1s">
+			<div class="service-icon">
+				<i class="pixeden pd-icon-monitor"></i> <!-- ICONE DE LA BOITE-->
+			</div>
+			<h5 class="red-border-bottom">Design du site</h5> <!-- HAUT DE LA BOITE -->
+			<p> <!-- DESCRIPTION DE LA BOITE -->
+				 Le design du site à était créé par Mister, basé sur du Flat design ( Nouveau design comme Windows 8 ).
+			</p>
+		</div>
+		<!-- / FIN DE LA PREMIERE BOITE. Les autres boîtes on le même format. -->
+		
+		<div class="col-lg-3 col-sm-3 focus-box green" data-scrollreveal="enter left after 0.15s over 1s">
+			<div class="service-icon">
+				<span class="pixeden pd-icon-camera"></span>
+			</div>
+			<h5 class="green-border-bottom">Les images</h5>
+			<p>
+				 Nos images sont toutes faite et prises par Mister, afin d'éviter les droits d'auteur et être unique.
+			</p>
+		</div>
+		
+		<div class="col-lg-3 col-sm-3 focus-box blue" data-scrollreveal="enter right after 0.15s over 1s">
+			<div class="service-icon">
+				<i class="pixeden pd-icon-email-marketing"></i>
+			</div>
+			<h5 class="blue-border-bottom">Comment nous contacter ?</h5>
+			<p>
+				 Pour nous contacter, c'est très simple, il vous suffit de nous envoyer un mail à l'adresse suivante : m.host@contact.com
+			</p>
+		</div>
+		
+		<div class="col-lg-3 col-sm-3 focus-box yellow" data-scrollreveal="enter right after 00.15s over 1s">
+			<div class="service-icon">
+				<i class="pixeden pd-icon-check"></i>
+			</div>
+			<h5 class="yellow-border-bottom">Services reconnu</h5>
+			<p>
+				 Nos service sont certifié et reconnus par des professionels de haut niveaux.
+			</p>
+		</div>
+	</div>
+	<!-- / FIN DES 4 BOITES -->
+	
+	<!-- DEBUT PETITE LISTE -->
+	<div class="other-focuses">
+		<h5><span class="section-footer-title">APRÈS VOUS POUVEZ NOUS SUIVRE SUR</span></h5>
+	</div>
+	
+	<!-- ITEMS PETITE LISTE -->
+	<div class="other-focus-list">
+		<ul data-scrollreveal="enter bottom after 0s over 1s">
+			<li><i class="icon-fontawesome-webfont-8"></i>Les application d'internet</li>
+			<li><i class="icon-fontawesome-webfont-267"></i>Les moteurs de recherche avancé</li>
+			<li><i class="icon-fontawesome-webfont-75"></i>Le cloud store</li>
+			<li><i class="icon-fontawesome-webfont-358"></i>Notre futur projet de CMS </li>
+			<li><i class="icon-fontawesome-webfont-102"></i>Notre application iOS</li>
+			<li><i class="icon-fontawesome-webfont-328"></i>Notre application Android</li>
+			<li><i class="icon-fontawesome-webfont-195"></i>Notre application Windows</li>
+			<li><i class="icon-fontawesome-webfont-297"></i><a href="http://cubecraft-pvp.crystal-serv.com">Mon site</a></li>
+		</ul>
+	</div> <!-- / FIN DE LA PETITE LISTE -->
+</div> <!-- / FIN CONTENAIRE -->
+</section>  <!-- / FIN SECTION PLAN DU SITE -->
 
-        <li>When Heroku received the source code, it fetched all the dependencies in the <a href="https://github.com/heroku/node-js-getting-started/blob/master/package.json">package.json</a>, creating a deployable slug.</li>
-        <li>The platform then spins up a dyno, a lightweight container that provides an isolated environment in which the slug can be mounted and executed.</li>
-        <li>You can scale your app, manage it, and deploy over <a href="https://addons.heroku.com/">150 add-on services</a>, from the Dashboard or CLI.</li>
-      </ul>
-    </div>
-    <div class="col-md-6">
-      <h3><span class="glyphicon glyphicon-link"></span> Next Steps</h3>
-      <ul>
-        <li>If you are following the <a href="https://devcenter.heroku.com/articles/getting-started-with-nodejs">Getting Started</a> guide, then please head back to the tutorial and follow the next steps!</li>
-        <li>If you deployed this app by deploying the Heroku Button, then in a command line shell, run:</li>
-        <ul>
-          <li><code>git clone https://github.com/heroku/node-js-getting-started.git</code> - this will create a local copy of the source code for the app</li>
-          <li><code>cd node-js-getting-started</code> - change directory into the local source code repository</li>
-          <li><code>heroku git:remote -a &lt;your-app-name></code> - associate the Heroku app with the repository</li>
-          <li>You'll now be set up to run the app locally, or <a href="https://devcenter.heroku.com/articles/getting-started-with-nodejs#push-local-changes">deploy changes</a> to Heroku</li>
-        </ul>
-      </ul>
-      <h3><span class="glyphicon glyphicon-link"></span> Helpful Links</h3>
-      <ul>
-        <li><a href="https://www.heroku.com/home">Heroku</a></li>
-        <li><a href="https://devcenter.heroku.com/">Heroku Dev Center</a></li>
-        <li><a href="https://devcenter.heroku.com/articles/getting-started-with-nodejs">Getting Started with Node on Heroku</a></li>
-        <li><a href="https://devcenter.heroku.com/articles/deploying-nodejs">Deploying Node Apps on Heroku</a></li>
-      </ul>
-    </div>
-  </div> <!-- row -->
-   <div class="alert alert-info text-center" role="alert">
-    Please do work through the Getting Started guide, even if you do know how to build such an application.  The guide covers the basics of working with Heroku, and will familiarize you with all the concepts you need in order to build and deploy your own apps.
-  </div>
+<!-- =========================
+   PREMIER SEPARATEUR      
+============================== -->
+
+<section class="separator-one">
+<div class="color-overlay">
+	<h3 class="container text" data-scrollreveal="enter left after 0s over 1s">
+	Nous avons rendu heureux plus de 100 personnes avec nos services ! </h3>
+	<div data-scrollreveal="enter right after 0s over 1s">
+		<a href="#testimonials" class="btn btn-primary custom-button green-btn">Leurs témoignages</a>
+	</div>
 </div>
+</section>  <!-- / FIN PREMIER SEPARATEUR -->
 
+
+<!-- =========================
+   GALERIE      
+============================== -->
+
+<section class="works" id="works">
+<div class="container">
+	
+	<!-- SECTION DU HAUT-->
+	<div class="section-header">
+		
+		<!-- TITRE -->
+		<h2 class="dark-text">Galerie d'images</h2>
+		
+		<!-- PETITE DESCRIPTION -->
+		<h6>
+			Voici une petite galerie d'image<a>/</a>fond d'écran. 
+		</h6>
+	</div>
+	<!-- / FIN SECTION DU HAUT -->
+	<div class="row projects">
+	<div id="loader">
+	    <div class="loader-icon"></div>
+	</div>
+	<div class="col-md-12" id="portfolio-list">
+		<!-- IMAGES GALERIE -->
+		<ul class="cbp-rfgrid">
+		
+        <!-- IMAGE -->	
+        <li data-scrollreveal="enter left after 0s over 1s">
+        <a href="project.html" class="more"><img src="images/portfolio/1.jpg"  alt="project"/> <!-- Changer le href="project.html" par le votre, exemple : href="image1.html" -->
+			<div class="project-info">
+				<div class="project-details">
+					<h5 class="white-text green-border-bottom">
+					Image d'exemple 1</h5>
+					<div class="details white-text">
+						Par Mister
+					</div>
+				</div>
+			</div>
+			</a>
+        </li>
+        <!-- / FIN IMAGE -->
+        
+        <!-- IMAGE -->	
+        <li data-scrollreveal="enter top after 0s over 1s">
+        <a href="project.html" class="more"><img src="images/portfolio/2.jpg" alt="project" />
+			<div class="project-info">
+				<div class="project-details">
+					<h5 class="white-text red-border-bottom">
+					Image d'exemple 2</h5>
+					<div class="details white-text">
+						Par Mister
+					</div>
+				</div>
+			</div>
+			</a>
+        </li>
+        <!-- / FIN IMAGE -->
+
+        <!-- IMAGE -->	
+        <li data-scrollreveal="enter top after 0s over 1s">
+        <a href="project.html" class="more"><img src="images/portfolio/3.jpg"  alt="project"/>
+			<div class="project-info">
+				<div class="project-details">
+					<h5 class="white-text blue-border-bottom">
+					Image d'exemple 3</h5>
+					<div class="details white-text">
+						Par Mister
+					</div>
+				</div>
+			</div>
+			</a>
+        </li>
+        <!-- / FIN IMAGE -->
+        
+		<!-- IMAGE -->	
+        <li data-scrollreveal="enter right after 0s over 1s">
+        <a href="project.html" class="more"><img src="images/portfolio/4.jpg"  alt="project"/>
+			<div class="project-info">
+				<div class="project-details">
+					<h5 class="white-text yellow-border-bottom">
+					Image d'exemple 4</h5>
+					<div class="details white-text">
+						Par Mister
+					</div>
+				</div>
+			</div>
+			</a>
+        </li>
+        <!-- / FIN IMAGE -->
+        
+        <!-- IMAGE -->	
+        <li data-scrollreveal="enter left after 0s over 1.15s">
+        <a href="project.html" class="more"><img src="images/portfolio/5.jpg" alt="project"/>
+			<div class="project-info">
+				<div class="project-details">
+					<h5 class="white-text red-border-bottom">
+					Image d'exemple 5 </h5>
+					<div class="details white-text">
+						Par Mister
+					</div>
+				</div>
+			</div>
+			</a>
+        </li>
+        <!-- / FIN IMAGE -->
+		
+        <!-- IMAGE -->	
+        <li>
+        <a href="project.html" class="more"><img src="images/portfolio/6.jpg" alt="project"/>
+			<div class="project-info">
+				<div class="project-details">
+					<h5 class="white-text red-border-bottom">
+					Image d'exemple 6</h5>
+					<div class="details white-text">
+						Par Mister
+					</div>
+				</div>
+			</div>
+			</a>
+        </li>
+        <!-- / FIN IMAGE -->
+         
+         <!-- IMAGE -->	
+        <li>
+        <a href="project.html" class="more"><img src="images/portfolio/7.jpg"  alt="project"/>
+			<div class="project-info">
+				<div class="project-details">
+					<h5 class="white-text red-border-bottom">
+					Image d'exemple 7</h5>
+					<div class="details white-text">
+						Par Mister
+					</div>
+				</div>
+			</div>
+			</a>
+        </li>
+        <!-- / FIN IMAGE -->
+		
+         <!-- IMAGE -->	
+        <li data-scrollreveal="enter right after 0s over 1.15s">
+        <a href="project.html" class="more"><img src="images/portfolio/8.jpg"  alt="project"/>
+			<div class="project-info">
+				<div class="project-details">
+					<h5 class="white-text red-border-bottom">
+					Image d'exemple 8</h5>
+					<div class="details white-text">
+						Par Mister
+					</div>
+				</div>
+			</div>
+			</a>
+        </li>
+        <!-- / FIN IMAGE -->
+		
+        <!-- IMAGE -->	
+        <li data-scrollreveal="enter left after 0s over 1.15s">
+        <a href="project.html" class="more"><img src="images/portfolio/9.jpg" alt="project"/>
+			<div class="project-info">
+				<div class="project-details">
+					<h5 class="white-text red-border-bottom">
+					Image d'exemple 9</h5>
+					<div class="details white-text">
+						Par Mister
+					</div>
+				</div>
+			</div>
+			</a>
+        </li>
+        <!-- / FIN IMAGE -->
+		
+        <!-- IMAGE -->	
+        <li data-scrollreveal="enter bottom after 0s over 1.15s">
+        <a href="project.html" class="more"><img src="images/portfolio/10.jpg" alt="project"/>
+			<div class="project-info">
+				<div class="project-details">
+					<h5 class="white-text red-border-bottom">
+					Image d'exemple 10</h5>
+					<div class="details white-text">
+						Par Mister
+					</div>
+				</div>
+			</div>
+			</a>
+        </li>
+        <!-- / FIN IMAGE -->
+		
+        <!-- IMAGE -->	
+        <li data-scrollreveal="enter bottom after 0s over 1.15s">
+        <a href="project.html" class="more"><img src="images/portfolio/11.jpg"  alt="project"/>
+			<div class="project-info">
+				<div class="project-details">
+					<h5 class="white-text red-border-bottom">
+					Image d'exemple 11</h5>
+					<div class="details white-text">
+						Par Mister
+					</div>
+				</div>
+			</div>
+			</a>
+        </li>
+        <!-- / FIN IMAGE -->
+		
+        <!-- IMAGE -->	
+        <li data-scrollreveal="enter right after 0s over 1.15s">
+        <a href="project.html" class="more"><img src="images/portfolio/12.jpg"  alt="project"/>
+			<div class="project-info">
+				<div class="project-details">
+					<h5 class="white-text red-border-bottom">
+					Image d'exemple 12</h5>
+					<div class="details white-text">
+						Par Mister
+					</div>
+				</div>
+			</div>
+			</a>
+        </li>
+        <!-- / FIN IMAGE -->
+
+        <!-- ... -->
+		</ul>
+	</div>
+	<!-- FIN IMAGES GALERIE -->
+</div>
+	
+	<!-- PAGE DE PROJET CHARGE ICI -->
+	<div id="loaded-content"></div>
+
+    <a id="back-button" class="blue-btn" href="#"><i class="icon-fontawesome-webfont-27"></i> Revenir en arrière</a>
+	
+</div> <!-- / FIN CONTENAIRE -->
+</section> <!-- / FIN GALERIE -->
+
+
+<!-- =========================
+   SECTION DE NOS COMPETENCES  
+============================== -->
+
+<section class="about-us" id="aboutus">
+<div class="container">
+	
+	<!-- SECTION DU HAUT -->
+	<div class="section-header">
+		
+		<!-- TITRE -->
+		<h2 class="white-text">Nos compétences</h2>
+		
+		<!-- PETITE DESCRIPTION -->
+		<h6 class="white-text">
+				Ce site vous permettra une multitude de choses unique !
+		</h6>
+	</div>
+	<!-- / FIN SECTION DU HAUT -->
+	
+	<!-- 3 COLONNE POUR "Nos Compétences" -->
+	<div class="row">
+		
+		<!-- COLONNE 1 - GROS MESSAGE PAR RAPPORT AU SITE -->
+		<div class="col-lg-4 col-md-4 column">
+			<div class="big-intro" data-scrollreveal="enter left after 0s over 1s">
+				 Site développé en 2014 par Mister.
+			</div>
+		</div>
+		
+		<!-- COLONNE 2 - INFOS A PROPOS DU SITE -->
+		<div class="col-lg-4 col-md-4 column" data-scrollreveal="enter bottom after 0s over 1s">
+			<p>
+				 En développent notre site nous ne pensions pas le sortir en tant que site d'hébergement mais juste un site personnel, au final,nous avons pensé le sortir en site d'hébergement.<br/><br/>
+				<br/>
+				Ce site aurait du être privé et non publique mais nous avons aussi décidé de le partager au public.
+			</p>
+		</div>
+		
+		<!-- COLONNE 3 - COMPETENCES-->
+		<div class="col-lg-4 col-md-4 column">
+			<ul class="skills" data-scrollreveal="enter right after 0s over 1s">
+				
+				<!-- COMPETENCE 1 -->
+				<li class="skill">
+					<div class="skill-count">
+						<input type="text" value="56" data-thickness=".2" class="skill1">
+					</div>
+					<h6>Design du site</h6>
+					<p>
+						Le design du site est maginifique, mais il manque énormément de choses que nous sommes en train de travailler.
+					</p>
+				</li> <!-- FIN COMPETENCE 1 -->
+				
+				<!-- COMPETENCE 2 -->
+				<li class="skill">
+					<div class="skill-count">
+						<input type="text" value="10" data-thickness=".2" class="skill2">
+					</div>
+					<h6>Développement</h6>
+					<p>
+						Le design c'est notre domaine, après, c'est à vous de configurer votre site à votre manière. ( hébergeur, site particulier... )
+					</p>
+				</li>
+				
+				<!-- COMPETENCE 3 -->
+				<li class="skill">
+					<div class="skill-count">
+						<input type="text" value="95" data-thickness=".2" class="skill3">
+					</div>
+					<h6>Photographie</h6>
+					<p>
+						De très beau graphismes sont présent, mais ce ne sont pas les plus beaux.
+					</p>
+				</li>
+				
+				<!-- COMPETENCE 4 -->
+				<li class="skill">
+					<div class="skill-count">
+						<input type="text" value="95" data-thickness=".2" class="skill4">
+					</div>
+					<h6>CSS</h6>
+					<p>
+						Notre CCS à totalement était refait de A à Z en changeant les couleurs pour du bleu.
+					</p>
+				</li>
+				
+			</ul> 
+		</div> <!-- / FIN COLONNE COMPETENCE-->
+	</div> <!-- / FIN 3 COLONNE A PROPOS DE NOUS-->
+
+	<!-- NOS PARTENAIRES -->
+	<div class="our-clients">
+		<h5><span class="section-footer-title">Nos partenaires</span></h5>
+	</div>
+	<!-- PARTENAIRE 1 -->
+	<div class="client-list">
+		<ul data-scrollreveal="enter right move 60px after 0.00s over 2.5s">
+			<li><a href="#"><img src="" alt="">Aucun pour le moment.</a></li>
+		</ul>
+	</div> <!-- / FIN DU PARTENAIRE 1 -->
+</div> <!-- / FIN CONTENAIRE -->
+
+</section> <!-- FIN "A PROPOS DE NOUS" -->
+
+<!-- =========================
+   STATISTIQUES              
+============================== -->
+
+<section class="stats">
+	<div class="container">
+	    <!-- STATISTIQUES -->
+	    <div class="row">
+	        
+	        <!-- DEBUT COLONNE -->
+	        <div class="col-lg-3 col-sm-3">
+	            <div class="stat" data-scrollreveal="enter bottom after 0s over 1s">
+	                <div class="icon-top red-text">
+	                    <i class="icon-design-graphic-tablet-streamline-tablet"></i>
+	                </div>
+	                <div class="stat-text">
+	                <h3 class="white-text red-border-bottom">1,236</h3>
+	                <h6>Téléchargements</h6>
+	                </div>
+	            </div>
+	        </div> <!-- / FIN COLONNE -->
+	        
+	        <!-- DEBUT COLONNE -->
+	        <div class="col-lg-3 col-sm-3">
+	            <div class="stat" data-scrollreveal="enter bottom after 0.15s over 1.15s">
+	                <div class="icon-top green-text">
+	                    <i class="icon-man-people-streamline-user"></i>
+	                </div>
+	                <div class="stat-text">
+	                <h3 class="white-text green-border-bottom">264</h3>
+	                <h6>Clients satisfaits</h6>
+	                </div>
+	            </div>
+	        </div> <!-- / FIN COLONNE -->
+	        
+	        <!-- DEBUT COLONNE -->
+	        <div class="col-lg-3 col-sm-3">
+	            <div class="stat" data-scrollreveal="enter bottom after 0.3s over 1.3s">
+	                <div class="icon-top blue-text">
+	                    <i class="icon-email-mail-streamline"></i>
+	                </div>
+	                <div class="stat-text">
+	                <h3 class="white-text blue-border-bottom">2,654</h3>
+	                <h6>Conversations par Mail</h6>
+	                </div>
+	            </div>
+	        </div> <!-- / FIN COLONNE -->
+	        
+	        <!-- DEBUT COLONNE -->
+	        <div class="col-lg-3 col-sm-3">
+	            <div class="stat" data-scrollreveal="enter bottom after 0.45s over 1.45s">
+	                <div class="icon-top yellow-text">
+	                    <i class="icon-picture-streamline-1"></i>
+	                </div>
+	                <div class="stat-text">
+	                <h3 class="white-text yellow-border-bottom">4</h3>
+	                <h6>Fonds d'écrans offerts</h6>
+	                </div>
+	            </div>
+	        </div> <!-- / FIN COLONNE -->
+	    </div>
+</div>
+</section>  <!-- / FIN DES STATISTIQUES -->
+
+<!-- =========================
+   SECTION EQUIPE  
+============================== -->
+
+<section class="our-team" id="team">
+<div class="container">
+	
+	<!-- SECTION DU HAUT -->
+	<div class="section-header">
+		
+		<!-- TITRE DE SECTION -->
+		<h2 class="dark-text">Notre équipe</h2>
+		
+		<!-- PETITE DESCRIPTION -->
+		<h6>
+			Regardez l'équipe qui à conçu ce site. 
+		</h6>
+	</div>
+	<!-- / FIN SECTION DU HAUT -->
+	
+	<!-- LES MEMBRES -->
+	<div class="row" data-scrollreveal="enter left after 0s over 2s">
+		<!-- MEMBRE -->
+		<div class="col-lg-3 col-sm-3">
+			<div class="team-member">
+				<figure class="profile-pic"> 
+				<img src="images/team/pic1.jpg" alt=""> <!-- IMAGE DU MEMBRE -->
+				</figure>
+				<div class="member-details">
+					<h5 class="dark-text red-border-bottom">Mister</h5>
+					<div class="position">
+						Créateur / Designer
+					</div>
+				</div>
+				<div class="social-icons">
+					<ul>
+						<li><a href="#"><i class="icon-facebook"></i></a></li>
+						<li><a href="http://twitter.com/theflo5002"><i class="icon-twitter-alt"></i></a></li>
+						<li><a href="http://youtube.com/theflo5002"><i class="icon-youtube"></i></a></li>
+					</ul>
+				</div>
+				<div class="details">
+					<p>
+						Le site à était inventé et fait par moi-même, sur ce site, une multitude de choses sont possible.
+					</p>
+				</div>
+			</div>
+		</div>
+		<!-- / FIN DE MEMBRE -->
+<!-- / FIN DE LA LISTE DES MEMBRES -->
+	
+</div> <!-- / FIN CONTENAIRE -->
+</section> <!-- / FIN DE LA SECTION DE NOTRE EQUIPE -->
+
+<!-- =========================
+   SECTION DES HEBERGEMENTS   
+============================== -->
+
+<section class="packages" id="pricingtable">
+<div class="container">
+	
+	<!-- SECTION DU HAUT -->
+	<div class="section-header">
+		
+		<!-- TITRE DE LA SECTION -->
+		<h2 class="white-text">Hébergements</h2>
+		
+		<!-- PETITE DESCRIPTION-->
+		<h6 class="white-text">
+			Nous avons 4 packs pour vous, choississez celui qui vous correspondra le mieu ! 
+		</h6>
+	</div>
+	<!-- / FIN SECTION DU HAUT -->
+	
+	<!-- HEBERGEMENT -->
+	<div class="row">
+		
+		<!-- PREMIER HEBERGEMENT -->
+		<div class="col-lg-3 col-sm-3">
+			<div class="package" data-scrollreveal="enter left after 0s over 1s">
+				<div class="package-header green-bg">
+					<h5>Basique</h5>
+				</div>
+				<div class="price dark-bg">
+					<div class="price-container">
+					<h4><span class="dollar-sign"></span>Gratuit</h4><span class="price-meta">
+					    
+					</span>
+					</div>
+				</div>
+				<ul>
+					<li><i class="icon-check"></i>Disque dur de 1 GB</li>
+					<li><i class="icon-check"></i>Bande passante de 100 MB/s</li>
+					<li><i class="icon-cancel"></i>Tutoriel d'installation</li>
+					<li><i class="icon-cancel"></i>Sauvegarde automatique</li>
+					<li><i class="icon-cancel"></i>Sécuriter avancé</li>
+				</ul>
+				<a href="#" class="btn btn-primary custom-button green-btn">
+				Acheter </a>
+			</div>
+		</div> <!-- / FIN DU PREMIER HEBERGEMENT -->
+		
+		<div class="col-lg-3 col-sm-3">
+			<div class="package" data-scrollreveal="enter left after 0s over 1s">
+				<div class="package-header blue-bg">
+					<h5>Standard</h5>
+				</div>
+				<div class="price dark-bg">
+					<div class="price-container">
+					<h4><span class="dollar-sign">€</span>2,50 </h4>
+					<span class="price-meta">/ Mo</span>
+					</div>
+				</div>
+				<ul>
+					<li><i class="icon-check"></i>Disque dur de 50 GB</li>
+					<li><i class="icon-check"></i>Bande passante de 250 MB/s</li>
+					<li><i class="icon-cancel"></i>Tutoriel d'installation</li>
+					<li><i class="icon-cancel"></i>Sauvegarde automatique</li>
+					<li><i class="icon-cancel"></i>Sécuriter avancé</li>
+				</ul>
+				<a href="#" class="btn btn-primary custom-button blue-btn">
+				Acheter </a>
+			</div>
+		</div>
+		
+		<div class="col-lg-3 col-sm-3">
+			<div class="best-value">
+				<div class="package" data-scrollreveal="enter bottom after 0s over 1s">
+					<div class="package-header red-bg">
+						<h4>V.I.P</h4>
+						<div class="meta-text">
+							Meilleur offre
+						</div>
+					</div>
+					<div class="price dark-bg">
+						<h4><span class="dollar-sign">€</span>3</h4>
+						<span class="price-meta">/ mo</span>
+					</div>
+					<ul>
+						<li><i class="icon-check"></i>Disque dur de 250 GB</li>
+						<li><i class="icon-check"></i>Bande passante non mesuré</li>
+						<li><i class="icon-check"></i>Tutoriel d'installation</li>
+						<li><i class="icon-cancel"></i>Sauvegarde Automatique</li>
+						<li><i class="icon-cancel"></i>Sécuriter avancé</li>
+					</ul>
+					<a href="#" class="btn btn-primary custom-button red-btn">
+				Acheter </a>
+				</div>
+			</div>
+		</div>
+		
+		<div class="col-lg-3 col-sm-3">
+			<div class="package" data-scrollreveal="enter right after 0s over 1s">
+				<div class="package-header yellow-bg">
+					<h5>Titan</h5>
+				</div>
+				<div class="price dark-bg">
+					<h4><span class="dollar-sign">€</span>4,50 </h4>
+					<span class="price-meta">/ mo</span>
+				</div>
+				<ul>
+					<li><i class="icon-check"></i>Disque dur de 1 To</li>
+					<li><i class="icon-check"></i>Bande passante non mesuré</li>
+					<li><i class="icon-check"></i>Tutoriel d'installation</li>
+					<li><i class="icon-check"></i>Sauvegarde Automatique</li>
+					<li><i class="icon-check"></i>Sécuriter avancé</li>
+				</ul>
+				<a href="#" class="btn btn-primary custom-button yellow-btn">
+				Acheter </a>
+			</div>
+		</div>
+	</div> <!-- / FIN HEBERGEMENT -->
+	
+</div> <!-- FIN CONTENAIRE -->
+</section> <!-- FIN HEBERGEMENTS SECTION -->
+
+<!-- =========================
+    "A PROPOS DE NOTRE SITE"   
+============================== -->
+<section class="features" id="features">
+<div class="container">
+		
+		<!-- SECTION DU HAUT -->
+	<div class="section-header">
+		
+		<!-- TITRE DE LA SECTION -->
+		<h2 class="dark-text">À propos de notre site</h2>
+		
+		<!-- PETITE DESCRIPTION -->
+		<h6>
+			Notre site avec un design unique et entièrement en français, voici ses caractéristiques.
+		</h6>
+	</div>
+	<!-- / FIN SECTION DU HAUT -->
+	
+	<!-- LES INFORMATIONS -->
+	<div class="row">
+		
+		<!-- COLONNE DE GAUCHE -->
+		<div class="col-md-6" data-scrollreveal="enter left after 0s over 1s">
+			
+			<!-- INFORMATION -->
+			<div class="feature">
+				<div class="feature-icon">
+					<i class="icon-heart-1"></i>
+				</div>
+				<h5>De l'amour dans notre design</h5>
+				<p>
+					 En fesant notre design de site, nous avons mis de l'amour dedans pour le rendre plus beau.
+				</p>
+			</div>
+			<!-- / FIN DE L'INFO -->
+			
+			<!-- INFORMATION -->
+			<div class="feature">
+				<div class="feature-icon">
+					<i class="icon-bulb"></i>
+				</div>
+				<h5>Système entièrement pensé</h5>
+				<p>
+					 Sur <a>Mister Host</a> tous nos systèmes sont pensés, du meilleur au plus mauvais !
+				</p>
+			</div>
+			<!-- / FIN DE L'INFO -->
+			
+			<!-- INFORMATION -->
+			<div class="feature">
+				<div class="feature-icon">
+					<i class="icon-settings-1"></i>
+				</div>
+				<h5>Enormément d'option sont disponibles</h5>
+				<p>
+					 Ce site peut s'adapter à un site particulier ( Chaîne YouTube... ), ainsi qu'un site de vente en ligne ( Vente de logiciel... ).
+				</p>
+			</div>
+			<!-- / FIN DE L'INFO -->
+		</div> <!-- / FIN COLONNE DE GAUCHE-->
+		
+		<!-- COLONNE DE DROITE -->
+		<div class="col-md-6" data-scrollreveal="enter right after 0s over 1s">
+			<!-- INFORMATION -->
+			<div class="feature">
+				<div class="feature-icon">
+					<i class="icon-params"></i>
+				</div>
+				<h5>Facilement modifiable</h5>
+				<p>
+					 Ce site ce modifi très facilement, tous est expliqué en français dans le code <a>HTML</a>.
+				</p>
+			</div>
+			<!-- / FIN DE L'INFO -->
+			
+			<!-- INFORMATION -->
+			<div class="feature">
+				<div class="feature-icon">
+					<i class="icon-handle-streamline-vector"></i>
+				</div>
+				<h5>Site sur une seule page</h5>
+				<p>
+					 Sans compter ses pages secondaires ( Achats... ) le site est formé sur une seule et unique page, elle est fluide et rapide, permettant au client de tous visionner sans un clic !
+				</p>
+			</div>
+			<!-- / FIN DE L'INFO -->
+			
+			<!-- INFORMATION -->
+			<div class="feature">
+				<div class="feature-icon">
+					<i class="icon-speech-streamline-talk-user"></i>
+				</div>
+				<h5>Support de contact</h5>
+				<p>
+					 Le site dispose d'un support de contact par e-mail tous en bas de de la page, facile et rapide, vous recevrez une réponse sous un délai de <a>24 heures</a>.
+				</p>
+			</div>
+			<!-- / FIN DE L'INFO -->
+			
+		</div> <!-- / FIN COLONNE DROITE -->
+	</div> <!-- / FIN "A PROPOS DE NOTRE SITE" -->
+</div> <!-- / FIN CONTENAIRE -->
+</section> <!-- / FIN SECTION "A PROPOS DE NOTRE SITE" -->
+
+<!-- =========================
+   SECTION DES PRODUITS  
+============================== -->
+
+<section class="products" data-type="background" data-speed="1" id="products">
+<div class="color-overlay">
+	<div class="container">
+			
+    <!-- SECTION DU HAUT -->
+        <div class="section-header">
+		
+		<!-- SECTION DU TITRE -->
+		<h2 class="white-text">Nos produits</h2>
+		
+		<!-- PETITE DESCRIPTION -->
+		<h6 class="white-text">
+			Nous disposons d'énormément de produits, chère ou pas, ils sont excellent. <h6 class="blue-text">( 1 pour le moment, les autres arrivent ).</h6>
+		</h6>
+	</div>
+	<!-- / FIN DE LA SECTION DU HAUT -->
+		
+		<!-- PRODUITS -->
+		<div class="row" data-scrollreveal="enter left after 0s over 1s">
+            
+            <!-- PREMIER PRODUIT -->
+                <div class="col-md-3">
+				<div class="item item-1">
+					<div class="item-overlay">
+					</div>
+					<div class="item-content">
+						<div class="item-top-content">
+							<div class="item-top-content-inner">
+								<div class="item-product">
+									<div class="item-top-title">
+										<h5>Mister Host</h5>  <!-- TITRE DU PRODUIT -->
+										<p class="subdescription">
+											 Template pour Bootstrap
+										</p> <!-- DESCRIPTION DU PRODUIT -->
+									</div>
+								</div>
+								<div class="item-product-price">
+									<!-- PRIX -->
+									<span class="price-num orange-text">Gratuit</span> 
+							        <!-- ANCIEN PRIX ( SUPPRIMER POUR ENLEVER-->
+									<p class="subdescription">
+										 2,99€
+									</p>
+									<div class="old-price">
+									</div> <!-- FIN DE L'ANCIEN PRIX -->
+								</div>
+							</div>
+						</div>
+						
+						<!-- ITEM LORSQUE LE CURSEUR PASSE DESSUS -->
+						<div class="item-add-content">
+							<div class="item-add-content-inner">
+								<div class="section">
+									<p>
+										Thème bootstrap sur une seule page.
+									</p>
+								</div>
+								<div class="section">
+									<a href="#" class="btn btn-primary custom-button blue-btn">Démonstration</a><br/>
+									<a href="#" class="btn btn-primary custom-button purple-btn">Télécharger</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div> <!-- / FIN DU PREMIER ITEM -->
+		</div> <!-- / FIN DE LA LISTE DES PRODUITS-->
+	</div> <!-- / FIN DU CONTAINER -->
+</div> <!-- / FIN DES COULEURS -->
+</section> <!-- / FIN DE LA SECTION DES PRODUITS -->
+
+<!-- =========================
+   ABONNEMENT          
+============================== -->
+
+<section class="newsletter">
+<div class="container">
+	<h3 class="white-text" data-scrollreveal="enter left after 0s over 1s">Abonnement</h3> <!-- HAUT DE LA SECTION ABONNEMENT -->
+	<div class="sub-heading white-text" data-scrollreveal="enter right after 0s over 1s">
+		 Donnez nous votre adresse mail pour être au courant de toutes les mise à jour.
+	</div> 
+	
+	<!-- FORME ABONNEMENT -->
+	<form action="#" class="subscription" role="form" data-scrollreveal="enter left after 0s over 1s">
+		<input type="email" placeholder="Adresse Mail" class="form-control input-box">
+		<button class="btn btn-primary custom-button blue-btn">Envoyer</button>
+	</form>
+	<!-- / FIN FORME ABONNEMENT -->
+	
+</div> <!-- / FIN CONTAINER -->
+</section> <!-- / FIN SECTION ABONNEMENT -->
+
+<!-- =========================
+   TEMOIGNAGES        
+============================== -->
+
+<section class="testimonial" id="testimonials">
+<div class="container">
+	  
+	  <!-- SECTION DU HAUT -->
+        <div class="section-header">
+		
+		<!-- TITRE DE LA SECTION -->
+		<h2 class="white-text">Témoignage</h2>
+		
+		<!-- PETITE DESCRIPTION -->
+		<h6 class="white-text">
+			Nous travaillons énormément sur notre template, voici les témoignage de nos clients satisfaits. 
+		</h6>
+	</div>
+	<!-- / FIN SECTION DU HAUT -->
+	
+	<!-- LES TEMOIGNAGES -->
+	<div class="row" data-scrollreveal="enter right after 0s over 1s">
+		<div class="col-md-12">
+			<div id="client-feedbacks" class="owl-carousel owl-theme">
+				
+				<!-- PREMIERE BOITE FEEDBACK-->
+				<div class="feedback-box">
+					
+					<!-- MESSAGE DU CLIENT -->
+					<div class="message">
+						 “Je trouve <a>Mister Host</a> vraiment bien, fluide, efficace et rapide.”
+					</div>
+					
+					<!-- INFORMATIONS DU CLIENT -->
+					<div class="client">
+						<div class="quote red-text">
+							<i class="icon-fontawesome-webfont-294"></i>
+						</div>
+						<div class="client-info">
+							<a class="client-name">Cedric</a>
+							<div class="client-company">
+								 Client, Cuisinier
+							</div>
+						</div>
+						<div class="client-image hidden-xs">
+							<img src="" alt="">
+						</div>
+					</div> <!-- / FIN DES INFORMATIONS DU CLIENT -->
+				</div> <!-- / FIN DE LA PREMIERE FEEDBACK-->
+				
+				<div class="feedback-box">
+					<div class="message">
+						 “Je trouve ce site vachement bien. J'espère qu'il serat beaucoup utilisé.”
+					</div>
+					<div class="client">
+						<div class="quote orange-text">
+							<i class="icon-fontawesome-webfont-294"></i>
+						</div>
+						<div class="client-info">
+							<a class="client-name" href="http://eywek.fr">Eywek</a>
+							<div class="client-company">
+								 Développeur web, Mine Web
+							</div>
+						</div>
+						<div class="client-image hidden-xs">
+							<img src="images/clients-pic/eywek.jpg" alt="">
+						</div>
+					</div>
+				</div>
+				
+			</div> <!-- / FIN FEEDBACKS -->
+		</div> <!-- / FIN COLONNE -->
+	</div> <!-- / FIN ROW -->
+	
+</div> <!-- / FIN CONTAINAIRE -->
+</section> <!-- / FIN TEMOIGNAGE -->
+
+<!-- =========================
+   TELECHARGER       
+============================== -->
+
+<section class="purchase-now">
+<div class="container">
+	<div class="row">
+		<div class="col-md-9" data-scrollreveal="enter left after 0s over 1s">
+			<h3 class="white-text">
+			Alors ? Vous aimez notre template ? Alors c'est partit ! Téléchargez là gratuitement.</h3>
+		</div>
+		<div class="col-md-3" data-scrollreveal="enter right after 0s over 1s">
+			<a href="#" class="btn btn-primary custom-button green-btn">Télécharger maintenant</a>
+		</div>
+	</div>
+</div>
+</section> <!-- / FIN DU TELECHARGEMENT. (DE LA TEMPLATE PAR EXEMPLE) -->
+
+<!-- =========================
+   CONTACTEZ NOUS         
+============================== -->
+
+<section class="contact-us" id="contact">
+<div class="container">
+	
+	<!-- SECTION DU HAUT -->
+        <div class="section-header">
+		
+		<!-- SECTION DU TITRE -->
+		<h2 class="white-text">Contactez nous</h2>
+		
+		<!-- PETITE DESCRIPTION A PROPOS DU SITE -->
+		<h6 class="white-text">
+			Vous avez une question ? Envoyez nous un message nous vous répondrons dans les <a>24 Heures</a> qui suivent.
+		</h6>
+	</div>
+	<!-- / FIN DE LA SECTION DU HAUT -->
+	
+	<!-- FORMULAIRE DE CONTACT -->
+	<div class="row">
+		<form role="form" action="#" class="contact-form">
+			<div class="col-lg-4 col-sm-4" data-scrollreveal="enter left after 0s over 1s">
+				<input type="text" name="name" placeholder="Votre Pseudonyme" class="form-control input-box">
+			</div>
+			<div class="col-lg-4 col-sm-4" data-scrollreveal="enter left after 0s over 1s">
+				<input type="email" name="email" placeholder="Votre adresse e-mail" class="form-control input-box">
+			</div>
+			<div class="col-lg-4 col-sm-4" data-scrollreveal="enter left after 0s over 1s">
+				<input type="text" name="subject" placeholder="Sujet" class="form-control input-box">
+			</div>
+			<div class="col-md-12" data-scrollreveal="enter right after 0s over 1s">
+				<textarea name="message" class="form-control textarea-box" placeholder="Votre message, constructif s'il vous plaît."></textarea>
+			</div>
+			<button class="btn btn-primary custom-button green-btn" type="submit" data-scrollreveal="enter left after 0s over 1s">Envoyer le message</button>
+		</form>
+	</div>
+	<!-- / FIN DU FORMULAIRE DE CONTACT -->
+</div> <!-- / FIN CONTAINER -->
+</section> <!-- / FIN DE LA SECTION CONTACTEZ NOUS -->
+
+<!-- =========================
+   PIED DE PAGE             
+============================== -->
+
+<footer>
+<div class="container">
+	
+	<!-- ADRESSE -->
+	<div class="col-md-5 company-details">
+		<div class="icon-top red-text">
+		    <i class="icon-fontawesome-webfont-302"></i>
+		</div>
+		Gironde, Aquitaine 33160
+	</div>
+	
+	<!-- EMAIL-->
+	<div class="col-md-2 company-details">
+		<div class="icon-top green-text">
+		<i class="icon-fontawesome-webfont-329"></i>
+		</div>
+		 mhost@contact.com
+	</div>
+	
+	<!-- NUMERO DE TELEPHONE -->
+	<div class="col-md-2 company-details">
+		<div class="icon-top blue-text">
+		<i class="icon-fontawesome-webfont-101"></i>
+		</div>
+		Aucun numéro actuel.
+	</div>
+	
+	<!-- ICONE RESAUX SOCIAUX ET COPYRIGHT -->
+	<div class="col-lg-3 col-sm-3 copyright">
+		<ul class="social">
+			<li><a href="#"><i class="icon-facebook"></i></a></li>
+			<li><a href="http://twitter.com/theflo5002"><i class="icon-twitter-alt"></i></a></li>
+			<li><a href="http://youtube.com/theflo5002"><i class="icon-youtube"></i></a></li>
+		</ul>
+		 Développé par <a href="http://Mister.tk"><img src="images/mister.png" alt="Mister">.<br></img></a> <!-- NE PAS CHANGER -->
+		 © 2014 - 2015 | Copyright Mister Host																<!-- LE COPYRIGHT ! -->
+	</div>
+</div> <!-- / FIN CONTAINER -->
+</footer> <!-- / FIN PIED DE PAGE  -->
+
+<!-- LES SCRIPTS -->
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.scrollTo.min.js"></script>
+<script src="js/jquery.nav.js"></script>
+<script src="js/jquery.knob.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/smoothscroll.js"></script>
+<script src="js/jquery.vegas.min.js"></script>
+<script src="js/scrollReveal.js"></script>    
+<script src="js/mhost.js"></script>
 
 </body>
+
 </html>
