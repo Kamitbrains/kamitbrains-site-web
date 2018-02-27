@@ -410,6 +410,7 @@ input:focus {
 
 .header {
 	background: rgba(0, 0, 0, 0.5);
+	background: url('../images/slide.png'); 
 	min-height: 775px;
 	position: relative;
 	overflow: hidden;
