@@ -803,6 +803,10 @@ width: -webkit-calc(100% / 2);
 }
 about-us .big-intro-left {
 	text-align: left;
+	font-weight: 300;
+	font-size: 60px;
+	line-height: normal;
+	margin-top: -15px;
 }
 
 .about-us p {
