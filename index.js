@@ -25,7 +25,7 @@ app.set('view engine', 'ejs');
 expressMail.extend(app, {
   transport: 'SMTP',
   host:'smtp.gmail.com',
-  secureConnection: false,
+  secureConnection: true,
   port: 465,
   transportMethod: 'SMTP',
   auth: {
