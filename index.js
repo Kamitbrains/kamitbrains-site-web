@@ -1,33 +1,45 @@
 var express = require('express');
 var diskdb = require('diskdb');
+var qs = require('qs');
+var bodyParser = require('body-parser');
 var expressMail = require('express-mailer');
 var app = express();
+
+
+db = diskdb.connect('datastorage', ['equipes']);
 
 app.set('port', (process.env.PORT || 5000));
 
 app.use(express.static(__dirname + '/public'));
+
+app.use( bodyParser.json() );       // to support JSON-encoded bodies
+app.use(bodyParser.urlencoded({     // to support URL-encoded bodies
+  extended: true
+})); 
 
 // views is directory for all template files
 app.set('views', __dirname + '/views');
 app.set('view engine', 'ejs');
 
 
-db = diskdb.connect('datastorage', ['equipes']);
-
-
 expressMail.extend(app, {
   transport: 'SMTP',
-  config: {
-    service: 'Gmail',
-    auth: {
-      user: 'kamitbrains@gmail.com',
-      pass: 'Aurelio_81g_n3aa_1993'
-    }
+  host:'smtp.gmail.com',
+  secureConnection: false,
+  port: 465,
+  transportMethod: 'SMTP',
+  auth: {
+    user: 'kamitbrains@gmail.com',
+    pass: 'Aurelio_81g_n3aa_1993'
   },
   defaults: {
-    from: 'kamitbrains@gmail.com'
+    to: 'kamitbrains@gmail.com',
+    subject: 'Nouveau Contact sur le site web de KamitBrains'
   }
 });
+
+
+
 
 app.get('/', function(request, response) {
   response.render('pages/index');
@@ -37,24 +49,32 @@ app.get('/', function(request, response) {
 app.post('/sendmail', function(request, response) {
   
 
+  var datas = request.body;
+
+
+  console.log(datas);
+
   // Setup email data. 
   var mailOptions = {
-    to: 'bar@blurdybloop.com',
-    subject: 'Contact from Kamitbrains website ✔',
+    from: datas.email,
+    subject: datas.subject,
+    cc: 'nkaurelien@gmail.com,igornathan777@gmail.com,ngwenidriss@gmail.com',
     locals: {
       title: 'Hello Admin',
-      message: 'Welcome to my website'
+      message: datas.message
     }
   }
   
   // Send email. 
-  app.send('mail', mailOptions, function (error, response) {
+  app.mailer.send('email/contact.ejs', mailOptions, function (error, response) {
     if (error) {
       console.log(error);
     } else {
       console.log('Message sent: ' + response.message);
     }
   });
+
+
 
 });
 
