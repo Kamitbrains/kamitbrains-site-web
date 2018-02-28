@@ -458,6 +458,10 @@ input:focus {
 	position: relative;
 	line-height: 45px;
 }
+
+.navbar-brand > img {
+	height: 3em;
+}
 .current a {
 	color: #01A1FE !important;
 	position: relative;
