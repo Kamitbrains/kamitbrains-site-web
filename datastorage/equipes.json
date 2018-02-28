@@ -1,0 +1,20 @@
+[
+    {
+        "pseudo" : "nkaurelien",
+        "nom":"Nkumbe Aurelien",
+        "poste":"1er CEO",
+        "roles":"Directeur Technique"
+    },
+    {
+        "pseudo" : "nnid",
+        "nom":"Ngwen Idriss",
+        "poste":"2eme CEO",
+        "roles":"Directeur Artistique"
+    },
+    {
+        "pseudo":"Igor",
+        "nom":"Kamto Igor Nathan",
+        "poste":"3eme CEO",
+        "roles":"Directeur marketing"
+    }
+]
