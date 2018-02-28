@@ -23,7 +23,6 @@ app.set('view engine', 'ejs');
 
 
 expressMail.extend(app, {
-  transport: 'SMTP',
   host:'smtp.gmail.com',
   secureConnection: true,
   port: 465,
@@ -31,10 +30,6 @@ expressMail.extend(app, {
   auth: {
     user: 'kamitbrains@gmail.com',
     pass: 'Aurelio_81g_n3aa_1993'
-  },
-  
-  defaults: {
-    subject: 'Nouveau Contact sur le site web de KamitBrains'
   }
 });
 
@@ -55,8 +50,9 @@ app.post('/sendmail', function(request, response) {
   console.log(datas);
 
   // Setup email data. 
+  var fromvaleur = `${datas.name} <${datas.email}>`;
   var mailOptions = {
-    from: datas.email,
+    from: fromvaleur,
     subject: datas.subject,
     cc: 'nkaurelien@gmail.com,igornathan777@gmail.com,ngwenidriss@gmail.com',
     locals: {
