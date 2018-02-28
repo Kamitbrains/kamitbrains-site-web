@@ -797,6 +797,10 @@ width: -webkit-calc(100% / 2);
 	line-height: normal;
 	margin-top: -15px;
 }
+about-us .big-intro-left {
+	text-align: left;
+}
+
 .about-us p {
 	text-align: left;
 	color: #939393;
