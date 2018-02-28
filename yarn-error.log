@@ -1,8 +1,8 @@
 Arguments: 
-  /usr/bin/node /usr/bin/yarn add diskdb
+  /usr/bin/node /usr/bin/yarn add i18n
 
 PATH: 
-  /home/nkaurelien/bin:/home/nkaurelien/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/opt/lampp:/opt/lampp/bin:/home/jdk/jdk8/bin:/android-sdk-linux-for-studio:/android-sdk-linux-for-studio/platform-tools:/android-sdk-linux-for-studio/tools:/android-studio/gradle/gradle-3.2/bin:/opt/lampp:/opt/lampp/bin:/home/jdk/jdk8/bin:/android-sdk-linux-for-studio:/android-sdk-linux-for-studio/platform-tools:/android-sdk-linux-for-studio/tools:/android-studio/gradle/gradle-3.2/bin
+  /home/nkaurelien/bin:/home/nkaurelien/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/opt/lampp:/opt/lampp/bin:/home/jdk/jdk8/bin:/android-sdk-linux-for-studio:/android-sdk-linux-for-studio/platform-tools:/android-sdk-linux-for-studio/tools:/android-studio/gradle/gradle-3.2/bin
 
 Yarn version: 
   1.5.1
@@ -15,19 +15,27 @@ Platform:
 
 npm manifest: 
   {
-    "name": "node-js-getting-started",
+    "name": "kamitbrains-website",
     "version": "0.2.5",
-    "description": "A sample Node.js app using Express 4",
+    "description": "Le site web officiel du groupe kamitbrains",
     "engines": {
       "node": "5.9.1"
     },
     "main": "index.js",
     "scripts": {
-      "start": "node index.js"
+      "start": "node index.js",
+      "live": "nodemon index.js"
     },
     "dependencies": {
+      "body-parser": "^1.18.2",
+      "diskdb": "^0.1.17",
       "ejs": "2.4.1",
-      "express": "4.13.3"
+      "express": "4.13.3",
+      "express-mailer": "^0.3.1",
+      "i18n": "^0.8.3",
+      "lodash": "^4.17.5",
+      "nodemon": "^1.17.1",
+      "qs": "^6.5.1"
     },
     "repository": {
       "type": "git",
