@@ -1,5 +1,8 @@
 var express = require('express');
+var diskdb = require('diskdb');
 var app = express();
+
+db = diskdb.connect('datastorage', ['equipes']);
 
 app.set('port', (process.env.PORT || 5000));
 
