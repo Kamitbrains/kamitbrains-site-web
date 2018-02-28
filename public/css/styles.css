@@ -801,7 +801,7 @@ width: -webkit-calc(100% / 2);
 	line-height: normal;
 	margin-top: -15px;
 }
-about-us .big-intro-left {
+.about-us .big-intro-left {
 	text-align: left;
 	font-weight: 300;
 	font-size: 60px;
