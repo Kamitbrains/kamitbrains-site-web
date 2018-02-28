@@ -56,10 +56,9 @@ app.post('/sendmail', function(request, response) {
     subject: datas.subject,
     cc: 'nkaurelien@gmail.com,igornathan777@gmail.com,ngwenidriss@gmail.com',
     locals: {
-      title: 'Hello Admin',
       message: datas.message
     }
-  }
+  };
   
   // Send email. 
   app.mailer.send('email/contact.ejs', mailOptions, function (error, response) {
