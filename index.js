@@ -23,17 +23,17 @@ app.set('view engine', 'ejs');
 
 
 expressMail.extend(app, {
+  
+ 
   transport: 'SMTP',
-  host:'smtp.gmail.com',
-  secureConnection: true,
-  port: 465,
-  transportMethod: 'SMTP',
-  auth: {
-    user: 'kamitbrains@gmail.com',
-    pass: 'Aurelio_81g_n3aa_1993'
+  config: {
+    service: 'Gmail',
+    auth: {
+      user: 'kamitbrains@gmail.com',
+      pass: 'Aurelio_81g_n3aa_1993'
+    }
   },
   defaults: {
-    to: 'kamitbrains@gmail.com',
     subject: 'Nouveau Contact sur le site web de KamitBrains'
   }
 });
