@@ -41,7 +41,7 @@ i {
 	vertical-align: middle;
 }
 ul, ol {
-padding-left: 0 !important; 
+padding-left: 0 !important;
 }
 li {
     list-style: none;
@@ -337,11 +337,11 @@ h6 {
 	border-radius: 4px;
 	background: rgba(255,255,255, 0.95);
 }
- textarea:hover, 
-input:hover, 
-textarea:active, 
-input:active, 
-textarea:focus, 
+ textarea:hover,
+input:hover,
+textarea:active,
+input:active,
+textarea:focus,
 input:focus {
     outline: 1 !important;
     outline-color: #007FFE !important;
@@ -412,7 +412,8 @@ input:focus {
 	background: rgba(0, 0, 0, 0.5);
 	background: url('../images/slide.png') center center no-repeat ;
 	background-clip: border-box;
-	background-size: cover; 
+	background-size: cover;
+
 
 	min-height: 775px;
 	position: relative;
@@ -526,17 +527,22 @@ input:focus {
 .focus-box {
 	margin-bottom: 75px;
 }
+.serv1{
+	padding-top: 23px;
+	border-radius: 27%;
+	width: 180px;
+	height: 180px;
+}
 .focus-box .service-icon {
-	margin-bottom: 30px;
-	width: 145px;
-	height: 145px;
 	margin: auto;
 	border-radius: 50%;
-	border: 10px solid #ececec;
+	border: 10px solid #ccc;
+	width: 250px;
+	height: 250px;
 	margin-bottom: 20px;
 	position: relative;
 	-webkit-transition: all 0.2s ease-in-out;
-	transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out
 }
 
 /* ON HOVER COLORED ROUNDED CIRCLE AROUND ICONS */
