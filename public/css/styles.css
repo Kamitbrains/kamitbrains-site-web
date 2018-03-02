@@ -620,6 +620,8 @@ input:focus {
 
 .separator-one {
 	background: rgba(52, 210, 147, 0.8);
+	background: url(../images/Testimonial-bg.jpg) 50% 0 repeat;
+	background-size: contain;
 	padding: 100px 0 100px 0;
 }
 .separator-one .green-btn {
@@ -1545,4 +1547,9 @@ footer {
 .single-project .project-information ul li span {
 	font-weight: 700;
 	margin-right: 5px;
+}
+
+
+#u_0_5{
+	color: lightgreen !important;	
 }
