@@ -8,6 +8,7 @@ $(document).ready(function (e) {
             minWidth: 300,
             maxWidth: 300,
             position: 'bottom',
+            theme: 'tooltipster-punk',
             interactive: true
         }); 
     });
