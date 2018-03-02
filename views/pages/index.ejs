@@ -6,7 +6,7 @@
 <meta name="keywords" content="NEAA Intelligence, software, developpement"/>
 <meta name="author" content="NEAA"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>NEAA, Intelligence</title>
+<title>KAMITBRAINS</title>
 
 <!-- =========================
  FAVICON ET ICONE DU SITE
@@ -21,6 +21,8 @@
 ============================== -->
 <link rel="stylesheet" href="css/bootstrap.min.css">
 
+<!-- Tooltipster css -->
+<link rel="stylesheet" href="bower_components/tooltipster/tooltipster.bundle.min.css">
 <!-- Material Design Bootstrap -->
 <!--
 <link href="bower_components/MDB Free/css/mdb.min.css" rel="stylesheet">
@@ -66,10 +68,10 @@
 
 
 <!-- =========================
-   SECTION PLAN DU SITE
+   SECTION SERVICES
 ============================== -->
 
-<% include partials/plan-du-site.ejs %>
+<% include partials/services.ejs %>
 
 <!-- =========================
    PREMIER SEPARATEUR
@@ -83,7 +85,10 @@
 		<a href="#testimonials" class="btn btn-primary custom-button green-btn">Leurs témoignages</a>
 	</div>
 	<br>
+
+  <!-- FACEBOOK LIKE BOUTTON -->
 	<div style="display:inline-block" class="fb-like" data-href="https://facebook.com/kamitbrains" data-width="300" data-layout="standard" data-action="like" data-size="large" data-show-faces="true" data-share="true"></div>
+
 </div>
 
 </section>  <!-- / FIN PREMIER SEPARATEUR -->
@@ -105,8 +110,9 @@
 <!-- =========================
    STATISTIQUES
 ============================== -->
-
+<% if(0){ %>
 <% include partials/statistiques.ejs %>
+<% } %>
 
 <!-- =========================
    SECTION EQUIPE
@@ -135,21 +141,23 @@
 <!-- =========================
    ABONNEMENT
 ============================== -->
-
+<% if(0){ %>
 <% include partials/abonnements.ejs %>
+<% } %>
 
 <!-- =========================
    TEMOIGNAGES
 ============================== -->
-<% if(0){ %>
+<% if(1){ %>
 <% include partials/temoignages.ejs %>
 <% } %>
 
 <!-- =========================
    TELECHARGER
 ============================== -->
-
+<% if(0){ %>
 <% include partials/telechargement.ejs %>
+<% } %>
 
 <!-- =========================
    CONTACTEZ NOUS
@@ -170,6 +178,9 @@
 <script type="text/javascript" src="bower_components/MDB Free/js/mdb.min.js"></script>
 
 <script src="bower_components/sweetalert2/dist/sweetalert2.all.min.js"></script>
+<script src="bower_components/tooltipster/tooltipster.bundle.min.js"></script>
+<script src="bower_components/instafeed.js/instafeed.js"></script>
+
 <!-- Include a polyfill for ES6 Promises (optional) for IE11, UC Browser and Android browser support -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/core-js/2.4.1/core.js"></script>
 
@@ -183,6 +194,7 @@
 <script src="js/mhost.js"></script>
 <script src="js/main.js"></script>
 
+
 <div id="fb-root"></div>
 <script>(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
@@ -190,8 +202,14 @@
   js = d.createElement(s); js.id = id;
   js.src = 'https://connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v2.12&appId=352215248613810&autoLogAppEvents=1';
   fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));
-</script>
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+      
+    <!-- Include the Google Maps API library - required for embedding maps -->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=
+    AIzaSyDHFEbCrT4N4V3e3rCSyFKZKQI-BVoR-zQ&callback=initMap"
+      type="text/javascript"></script>
 
 </body>
 
